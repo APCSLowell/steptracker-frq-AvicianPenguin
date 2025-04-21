@@ -3,14 +3,14 @@ public class StepTracker
 {
  private int numSteps;
  private int numRecordings;
- private int numActive
+ private int numActive;
  public StepTracker(Steps)
   {
    numSteps = steps;
    numRecordings = 0;
    numActive = 0;
   }
- public void addDailySteps(x)
+ public void addDailySteps(int x)
   {
    numSteps += x;
    numRecordings += 1;
