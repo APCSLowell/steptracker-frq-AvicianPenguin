@@ -4,7 +4,7 @@ public class StepTracker
  private int numSteps;
  private int numRecordings;
  private int numActive;
- public StepTracker(steps)
+ public StepTracker(int steps)
   {
    numSteps = steps;
    numRecordings = 0;
