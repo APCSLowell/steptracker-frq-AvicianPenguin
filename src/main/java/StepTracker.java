@@ -1,12 +1,14 @@
 import java.util.ArrayList;
 public class StepTracker
 {
- private int numSteps;
+ private int minSteps;
  private int numRecordings;
  private int numActive;
- public StepTracker(int steps)
+ private int numSteps
+ public StepTracker(int threshold)
   {
-   numSteps = steps;
+   minSteps = threshold;
+   numSteps = 0;
    numRecordings = 0;
    numActive = 0;
   }
@@ -14,7 +16,7 @@ public class StepTracker
   {
    numSteps += x;
    numRecordings += 1;
-   if(x>=10000)
+   if(x>=threshold)
     numActive+=1;
   }
  public int activeDays()
