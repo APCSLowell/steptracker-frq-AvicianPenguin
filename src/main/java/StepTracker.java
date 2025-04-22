@@ -23,6 +23,8 @@ public class StepTracker
   }
  public double averageSteps()
   {
+   if(numRecordings == 0)
+    return 0.0;
    return ((double)numSteps/numRecordings);
   }
 }
