@@ -21,7 +21,7 @@ public class StepTracker
   {
    return numActive;
   }
- public int averageSteps()
+ public double averageSteps()
   {
    return ((double)numSteps/numRecordings);
   }
