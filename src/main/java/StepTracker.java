@@ -16,7 +16,7 @@ public class StepTracker
   {
    numSteps += x;
    numRecordings += 1;
-   if(x>=threshold)
+   if(x>=minSteps)
     numActive+=1;
   }
  public int activeDays()
